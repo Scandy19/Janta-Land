@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/feedback.css">
+    <link rel="icon" href="/images/logo.png" type="image/ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback | Real Estate JLPL</title>
+</head>
+<body>
+    <div id="someThing">
+        <header>
+            <h1>Feedback Form</h1>
+        </header>
+        <nav>
+            <img src="/images/logo.png" alt="company logo" width="200" height="130">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="sites.html">Popular sites</a></li>
+                <li><a href="feedback.html">Feed Back</a></li>
+                <li><a href="employee.html">Employees</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div>
+                <h1 id="yayy">Please fill up the form only if you visited any of our offices !!!</h1>
+                
+            </div>
+            <form>
+                <fieldset>
+                    <legend>Feed Back Form</legend>
+                    <label for="fName">First Name: </label>
+                    <input type="text" id="fName" name="fName" size="30">
+                    <label for="lName">Last Name: </label>
+                    <input type="text" id="lName" name="lName" size="30">
+                    <label for="mail">Enter your E-mail: </label>
+                    <input type="email" id="mail" required name="mail" size="30">
+                    <label for="tel">Mobile Number: </label>
+                    <input type="tel" id="tel" name="tel" size="30">
+                    <label for="contact">Where did you hear about us?<br>(Select all that apply)</label>
+                    <select size="4" name="contact" id="contact">
+                        <option value="internet">Internet</option>
+                        <option value="magazine">Magazine</option>
+                        <option value="newspaper">NewsPaper</option>
+                        <option value="wordofmouth">Word of Mouth</option>
+                        <option value="other">Other</option>   
+                    </select>
+                    <label for="city">City: </label>
+                    <select size="1" name="city" id="city">
+                        <option>Select the city visited</option>
+                        <option value="Ludhiana">Ludhiana</option>
+                        <option value="moh1">Mohali, Sec-66A</option>
+                        <option value="moh2">Mohali, Sec-94</option>
+                        <option value="moh3">Mohali, Sec-106</option>
+                    </select>
+                    <label for="date">Date of visit: </label>
+                    <input type="date" name="date" id="date">
+                    <label for="name">Enter the Name of attendant: </label>
+                    <input type="text" name="name" id="name">
+                    <label class="inradio">Was your service friendly?</label>
+                    <div class="radios">
+                        <label>Yes<input type="radio" value="yes" name="service" id="yesserviceradio"></label>
+                        <label>No<input type="radio" value="no" name="service" id="noserviceradio"></label>
+                    </div>
+                    <label class="inradio">Was attendant able to clear all your questions?</label>
+                    <div class="radios"> 
+                        <label >Yes<input type="radio" value="yes" name="ableradio" id="yesableradio"></label>
+                        <label>No<input type="radio" value="no" name="ableradio" id="notableradio"></label>
+                    </div>
+                    <label class="inradio">Was your visit successful?</label>
+                    <div class="radios">
+                        <label>Yes<input type="radio" value="yes" name="succesfulradio" id="yessuccesfulradio"></label>
+                        <label>No<input type="radio" value="no" name="succesfulradio" id="notrsuccesfuladio"></label>
+                    </div>
+                        <label for="rate">Rate the overall service provided<br>(0=poor, 10=great)</label>
+                        <input type="range" name="rate" id="rate" max="10" min="0">
+                        <label for="experience">Tell us more about your Experience!</label>
+                        <textarea name="experience" id="experience" rows="10"></textarea>
+                </fieldset>
+                <div id="submit">
+                    <button type="button" onclick="myFunc(this.form);">Submit!!</button>
+                </div>
+            </form>
+        </main>
+        <footer>
+            &copy; All Rights Reserved<br>
+            Saksham Abrol<br>
+            300344227
+        </footer>
+    </div>
+    <script src="/script/feedback.js"></script>
+</body>
+</html> 

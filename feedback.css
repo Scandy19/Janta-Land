@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to bottom, #368BC1, white, #368BC1);
+}
+#someThing{
+    background-color: whitesmoke;
+    width: 90%;
+    margin: auto;
+    border: 3px black solid;
+    box-shadow: 5px 45px 50px black;
+}
+header{
+    border: 2px solid black;
+    background-color: cadetblue;
+    color: lightcyan;
+    text-align: center;
+    font-size: larger;
+    letter-spacing: 3px;
+}
+nav{
+    text-align: center;
+    float: left;
+    width: 20%;
+}
+nav a:link{
+    color: black;
+}
+nav a:hover{
+    color: lightseagreen;
+}
+nav ul{
+    list-style-type: none;
+}
+nav li{
+    border: 3px solid black;
+    border-radius: 20px;
+    margin: 1%;
+    padding: 5px;    
+    background-color: honeydew;
+    display: block;
+    margin-left: -1em;
+    box-shadow: 2px 1px 10px #000;
+    letter-spacing: 0.3em;
+    font-size: 1.1em;
+    padding-bottom: 5px;
+}
+#yayy{
+    text-align: center;
+    color: blue;
+}
+form{
+    margin-top: 2%;
+}
+fieldset{
+    border: 2px ridge black;
+    background-color: azure;
+    border-radius: 5px;
+    border-bottom-right-radius: 20px; 
+    width: 100%;
+    height: auto;
+    min-height: 500px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 2px 2px;
+}
+legend{
+    border: 2px ridge black;
+    background-color: lightgrey;
+    border-radius: 5px;
+    padding: 2%;
+}
+label{
+    font-weight: bold;
+    float: left;
+    margin-top: 10px;
+    clear: both;
+}
+input, select, text, .radios{
+    float: right;
+    margin: 6px; 
+}
+textarea{
+    width: 80%;
+    margin-top: 10px;
+    margin-left: 42px;
+}
+.inradio{
+    margin-right: 20%;
+}
+.radios{
+    border: 3px solid black;
+    margin-top: 10px;
+    padding: 0px 5px 5px 3px;
+    clear: none;
+    justify-content: center;
+}
+.radios label, .radios input{
+    float: none;
+    width: auto;
+}
+#submit{
+    align-items: center;
+    width: 8%;
+    margin: auto;
+    margin-bottom: 3px;
+}
+#submit button{
+    padding: 5px;
+    margin: 4%;
+    font-size: large;
+    border: 3px black solid;
+    box-shadow: 5px 5px 20px #368BC1 ;
+}
+nav a{
+    text-decoration: none;
+    margin: 2%;
+    font-weight: bold;
+    font-weight: bolder;
+}
+main{
+    font-family: 'Times New Roman', Times, serif;
+    width: 50%;
+    margin-left: 23%;
+}
+footer{
+    background-color: cadetblue;
+    text-align: center;
+    padding-top: 5px;
+}
+@media only screen and (max-width: 768px){
+    nav ul li{
+        display: block;
+        border: 2px solid black; 
+        border-top: unset;
+        background-color: turquoise;
+    }
+    
+    
+    
+}
+@media only screen and (max-width: 1024px){/*for mobile device*/
+    nav{
+        float: none;
+        width: auto;
+    }
+    #someThing{
+        width: auto;
+    }
+    nav li{
+        display: inline;
+        box-shadow: none;
+        background-color: unset;
+        letter-spacing: normal;
+        border: none;
+    }
+    nav img{
+        display: none;
+    }
+    body{
+        margin: 0;
+    }
+    main{
+        margin-left: 0;
+        width: 100%;
+    }
+    form{
+        width: 80%;
+        margin: auto;
+    }
+} 

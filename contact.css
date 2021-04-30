@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+} 
+body{
+    background-image: linear-gradient(to bottom, #368BC1, white, #368BC1);
+}
+#cover{
+    background-color: whitesmoke;
+    width: 90%;
+    margin: auto;
+    border: 3px black solid;
+    box-shadow: 5px 45px 50px black;
+}
+header{
+    border: 2px solid black;
+    background-color: cadetblue;
+    color: lightcyan;
+    text-align: center;
+    font-size: larger;
+    letter-spacing: 3px;
+}
+nav{
+    text-align: center;
+    float: left;
+    width: 20%;
+}
+nav a:link{
+    color: black;
+}
+nav a:hover{
+    color: lightseagreen;
+}
+nav ul{
+    list-style-type: none;
+}
+nav li{
+    border: 3px solid black;
+    border-radius: 20px;
+    margin: 1%;
+    padding: 5px;    
+    background-color: honeydew;
+    display: block;
+    margin-left: -1em;
+    box-shadow: 2px 1px 10px #000;
+    letter-spacing: 0.3em;
+    font-size: 1.1em;
+    padding-bottom: 5px;
+}
+nav a{
+    text-decoration: none;
+    margin: 2%;
+    font-weight: bold;
+    font-weight: bolder;
+}
+main h2{
+    border: 3px black solid;
+    padding: 5px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    background-color: cyan;
+}
+main h3 {
+    font-size: larger;   
+}
+h3, p{
+    margin-left: 10%;
+}
+main p{
+    font-size: 17px;
+}
+#office{
+    max-width: 100%;
+    width: 56%;
+    margin-left: 22%;
+}
+main{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: azure;
+    width: 75%;
+    margin-left: 23%;
+    margin-bottom: 4px;
+}
+footer{
+    background-color: cadetblue;
+    text-align: center;
+    padding-top: 5px;
+}
+@media only screen and (max-width: 768px){
+    nav ul li{
+        display: block;
+        border: 2px solid black; 
+        border-top: unset;
+        background-color: turquoise;
+    }
+  
+    
+    
+}
+@media only screen and (max-width: 1024px){/*for mobile device*/
+    nav{
+        float: none;
+        width: auto;
+    }
+    #cover{
+        width: auto;
+    }
+    nav li{
+        display: inline;
+        box-shadow: none;
+        background-color: unset;
+        letter-spacing: normal;
+        border: none;
+    }
+    nav img{
+        display: none;
+    }
+    body{
+        margin: 0;
+    }
+    main{
+        margin-left: 0;
+        width: 100%;
+    }
+} 

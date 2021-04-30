@@ -1,0 +1,213 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to bottom, #368BC1, white, #368BC1);
+}
+#container{
+    background-color: whitesmoke;
+    width: 90%;
+    margin: auto;
+    border: 3px black solid;
+    box-shadow: 5px 45px 50px black;
+}
+header{
+    border: 2px solid black;
+    background-color: cadetblue;
+    color: lightcyan;
+    text-align: center;
+    font-size: larger;
+    letter-spacing: 3px;
+}
+nav{
+    text-align: center;
+    float: left;
+    width: 20%;
+}
+nav a:link{
+    color: black;
+}
+nav a:hover{
+    color: lightseagreen;
+}
+nav ul{
+    list-style-type: none;
+}
+nav li{
+    border: 3px solid black;
+    border-radius: 20px;
+    margin: 1%;
+    padding: 5px;    
+    background-color: honeydew;
+    display: block;
+    margin-left: -1em;
+    box-shadow: 2px 1px 10px #000;
+    letter-spacing: 0.3em;
+    font-size: 1.1em;
+    padding-bottom: 5px;
+}
+nav a{
+    text-decoration: none;
+    margin: 2%;
+    font-weight: bold;
+    font-weight: bolder;
+}
+aside a:link{
+    color: black;
+}
+aside a:hover{
+    color: lightseagreen;
+}
+aside{
+    position: fixed;
+    right: 83px; 
+    padding: 1%;
+    padding-top: 0px;
+    margin-right: 1%;
+    margin-top: 1%;
+    float: right;
+    background-color: rgb(224, 202, 202);
+}
+aside li{
+    margin: 1%;
+    padding: 5px;
+    font-weight: bolder;
+}
+#sanawar_viewport{
+    border: 2px black solid;
+    height: 60%;
+}
+.sanawar{
+    width: 45%;
+    transition: 0.5s;
+    margin: 2%;
+}
+.sanawar:hover{
+    transform: scale(1.5);
+}
+#falcon_viewport{
+    border: 2px black solid;
+    height: 60%;
+}
+.falcon{
+    width: 45%;
+    transition: 0.5s;
+    margin: 2%;
+}
+.falcon:hover{
+    transform: scale(1.5);
+}
+#skygardens_viewport{
+    border: 2px black solid;
+    height: 60%;
+}
+.gardens{
+    width: 45%;
+    transition: 0.5s;
+    margin: 2%;
+}
+.gardens:hover{
+    transform: scale(1.5);
+}
+#canalview_viewport{
+    border: 2px black solid;
+    height: 60%;
+}
+.canal{
+    width: 45%;
+    transition: 0.5s;
+    margin: 2%;
+}
+.canal:hover{
+    transform: scale(1.5);
+}
+aside ul{
+    list-style-type: none;
+    padding-left: 0px;
+}
+aside a{
+    text-decoration: none;
+    margin: 2%;
+    font-weight: bold;
+}
+main img{
+    width: 100%;
+    margin: auto;
+} 
+main h1{
+    text-align: center;
+    background-image: linear-gradient(to right, rgb(143, 143, 252), white);
+    border: 2px solid black;
+    padding: 3px;
+}
+main{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: azure;
+    width: 60%;
+    margin-left: 23%;
+}
+main h2{
+    border: 3px black solid;
+    padding: 5px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    background-color: cyan;
+}
+main h3 {
+    font-size: larger;   
+}
+main ul{
+    margin-left: 10%;
+}
+h3, p{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+main p{
+    font-size: 17px;
+}
+footer{
+    background-color: cadetblue;
+    text-align: center;
+    padding-top: 5px;
+}
+@media only screen and (max-width: 768px){
+    nav ul li{
+        display: block;
+        border: 2px solid black; 
+        border-top: unset;
+        background-color: turquoise;
+    }
+    
+    
+    
+}
+@media only screen and (max-width: 1024px){/*for mobile device*/
+    nav{
+        float: none;
+        width: auto;
+    }
+    #container{
+        width: auto;
+    }
+    nav li{
+        display: inline;
+        box-shadow: none;
+        background-color: unset;
+        letter-spacing: normal;
+        border: none;
+    }
+    nav img{
+        display: none;
+    }
+    body{
+        margin: 0;
+    }
+    main{
+        margin-left: 0;
+        width: 100%;
+    }
+    aside{
+        display: none;
+    } 
+} 
